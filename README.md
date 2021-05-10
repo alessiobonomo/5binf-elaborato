@@ -28,4 +28,7 @@ Il candidato analizzi la realtà di riferimento e, fatte le opportune ipotesi ag
     * I trattamenti effettuati nell’ultimo mese dalla cliente Angelina Jolie;
     * Tutti i trattamenti più gettonati raggruppati per tipo
 
-un “executive summary” del progetto redatto in lingua inglese, che presenti il progetto in un’ottica di business. 
+* un “executive summary” del progetto redatto in lingua inglese, che presenti il progetto in un’ottica di business.  
+## PIANO INDIRIZZAMENTO 
+![PIANO INDIRIZZAMENTO](https://raw.githubusercontent.com/alessiobonomo/5binf-elaborato/main/elaboratoIndirizzo.png)
+
