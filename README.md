@@ -33,5 +33,5 @@ Il candidato analizzi la realtà di riferimento e, fatte le opportune ipotesi ag
 ![PIANO INDIRIZZAMENTO](https://raw.githubusercontent.com/alessiobonomo/5binf-elaborato/main/elaboratoIndirizzo.png)
 
 ## STRUTTURA ELABORATO 
-![STRUTTURA ELABORATO ]()
+![STRUTTURA ELABORATO ](https://raw.githubusercontent.com/alessiobonomo/5binf-elaborato/main/STRUTTURA%20ELABORATO.PNG)
 
