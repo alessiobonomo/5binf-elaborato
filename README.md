@@ -48,41 +48,35 @@ genere VARCHAR(45) NOT NULL);
 CREATE TABLE appuntamenti (
 id_appuntamento INT NOT NULL PRIMARY KEY,
 ora TIME NOT NULL,
-data DATE NOT NULL,
-CodFiscale VARCHAR(16) NOT NULL);
+data DATE NOT NULL;
 
 CREATE TABLE operazioni cassa (
 id_operazione INT NOT NULL PRIMARY KEY,
 valore_ammontare FLOAT NOT NULL,
 descrizione VARCHAR(40) NOT NULL,
 data  DATE NOT NULL,
-ora TIME NOT NULL,
-id_operazione INT NOT NULL,
-CodFiscale VARCHAR(16) NOT NULL,
-id_Prodotto VARCHAR(16) NOT NULL);
+ora TIME NOT NULL;
 
 CREATE TABLE fidelity card (
 id_Carta INT NOT NULL PRIMARY KEY,
-punti INT NOT NULL,
-CodFiscale VARCHAR(16) NOT NULL);
+punti INT NOT NULL;
 
 CREATE TABLE carta_regalo (
 id_CartaR INT NOT NULL PRIMARY KEY,
-valore  FLOAT NOT NULL,
-id_Operazione INT NOT NULL);
+valore  FLOAT NOT NULL;
 
 CREATE TABLE Cronologia eventi  (
 id_Evento INT NOT NULL PRIMARY KEY,
 data DATE NOT NULL,
 ora TIME NOT NULL,
-luogo VARCHAR(20) NOT NULL,
-CodFiscale VARCHAR(16) NOT NULL);
+luogo VARCHAR(20) NOT NULL;
+
 
 CREATE TABLE stat_Economiche (
 id_stat INT NOT NULL PRIMARY KEY,
 preferenze VARCHAR(30) NOT NULL,
-necessità  VARCHAR(30) NOT NULL,
-id_appuntamento VARCHAR(16) NOT NULL);
+necessità  VARCHAR(30) NOT NULL;
+
 
 CREATE TABLE Gestione_Prodotto (
 id_prodotto INT NOT NULL PRIMARY KEY,
@@ -95,19 +89,15 @@ CREATE TABLE campagne_promozionali (
 id_Promozione INT NOT NULL PRIMARY KEY,
 tipo VARCHAR(20) NOT NULL,
 sconto INT NOT NULL,
-costo  FLOAT NOT NULL,
-CodFiscale VARCHAR(16) NOT NULL,
-id_Prodotto INT NOT NULL);
+costo  FLOAT NOT NULLM;
 
 CREATE TABLE archivio_foto (
 id_Foto INT NOT NULL PRIMARY KEY,
 data DATE NOT NULL,
-ora TIME NOT NULL,
-CodFiscale VARCHAR(16) NOT NULL);
+ora TIME NOT NULL;
 
 CREATE TABLE Scheda_tecnica (
-id_scheda  INT NOT NULL PRIMARY KEY,
-CodFiscalr VARCHAR(16) NOT NULL);
+id_scheda  INT NOT NULL PRIMARY KEY;
 
 CREATE TABLE operazioni_scheda (
 id_operazioneS INT NOT NULL PRIMARY KEY,
@@ -125,11 +115,22 @@ ALTER TABLE stat_Economiche ADD FOREIGN KEY (id_appuntamento) REFERENCES Clienti
 ALTER TABLE campagne_promozionali ADD FOREIGN KEY (CodFiscale) REFERENCES archivio_foto(id_Foto);
 ALTER TABLE campagne_promozionali ADD FOREIGN KEY (id_Prodotto) REFERENCES Gestione_Prodotto(id_prodotto);
 ALTER TABLE archivio_foto ADD FOREIGN KEY (CodFiscale) REFERENCES Clienti (codfiscale);
-ALTER TABLE Scheda_tecnica ADD FOREIGN KEY (CodFiscalr) REFERENCES Clienti (codfiscale);
+ALTER TABLE Scheda_tecnica ADD FOREIGN KEY (CodFiscale) REFERENCES Clienti (codfiscale);
 ALTER TABLE operazioni_scheda ADD FOREIGN KEY (id_operazione) REFERENCES Clienti (codfiscale);
 ALTER TABLE operazioni_scheda ADD FOREIGN KEY (id_scheda) REFERENCES Clienti (codfiscale);
 
+## QUERY
+"I trattamenti effettuati nell’ultimo mese dalla cliente Angelina Jolie"
+SELECT C.codFiscale,C.Nome,C.cognome,O.descrizione
+FROM Clienti AS C,operazione_cassa AS O,Scheda_tecnica AS S,Operazioni_Scheda AS OS
+WHERE C.codFiscale=S.codFiscale and S.id_Scheda=OS.id_Scheda and OS.id_operazioneS=O.id_operazione
 
 
+
+
+"Tutti i trattamenti più gettonati raggruppati per tipo"
+SELECT
+FROM
+WHERE
 
 
