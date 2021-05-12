@@ -1,11 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2021-05-12T07:38:33.878Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="mH-xWMfnOI6opDWieuzU" version="14.6.12" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-12T07:42:30.658Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="3O7majesBH9L0LCRE7TJ" version="14.6.12" type="github">
   <diagram id="CZ2MF3NDUHEG7JQgw2JQ" name="Page-1">
-    <mxGraphModel dx="942" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1769" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="JEwpR79MPoA-WKV8Z6C1-2" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
-          <mxGeometry y="100" width="830" height="420" as="geometry" />
+          <mxGeometry y="110" width="980" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-25" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=rect;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-2">
+          <mxGeometry x="-1" y="90" width="981" height="550" as="geometry" />
         </mxCell>
         <mxCell id="JEwpR79MPoA-WKV8Z6C1-3" value="Page 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-2">
           <mxGeometry x="60" y="12" width="110" height="26" as="geometry" />
@@ -13,66 +16,63 @@
         <mxCell id="JEwpR79MPoA-WKV8Z6C1-4" value="https://www.BarberShop.com" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-2">
           <mxGeometry x="130" y="60" width="250" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-6" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fillColor=#ffffff;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-2">
-          <mxGeometry y="110" width="200" height="310" as="geometry" />
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-36" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fillColor=#ffffff;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-2">
+          <mxGeometry x="360" y="190" width="200" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-7" value="Sign In" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-6">
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-37" value="Sign In" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-36">
           <mxGeometry width="100" height="20" relative="1" as="geometry">
             <mxPoint x="10" y="10" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-8" value="" style="shape=line;strokeColor=#ddeeff;strokeWidth=2;html=1;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-6">
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-38" value="" style="shape=line;strokeColor=#ddeeff;strokeWidth=2;html=1;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-36">
           <mxGeometry width="180" height="10" relative="1" as="geometry">
             <mxPoint x="10" y="30" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-9" value="User Name:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-6">
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-39" value="User Name:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-36">
           <mxGeometry width="100" height="20" relative="1" as="geometry">
             <mxPoint x="10" y="40" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-10" value="johndoe" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-6">
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-40" value="johndoe" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-36">
           <mxGeometry width="150" height="25" relative="1" as="geometry">
             <mxPoint x="10" y="60" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-11" value="Password:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-6">
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-41" value="Password:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-36">
           <mxGeometry width="100" height="20" relative="1" as="geometry">
             <mxPoint x="10" y="95" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-12" value="********" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-6">
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-42" value="********" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-36">
           <mxGeometry width="150" height="25" relative="1" as="geometry">
             <mxPoint x="10" y="115" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-13" value="SIGN IN" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=5;strokeColor=none;fontColor=#ffffff;fillColor=#66bbff;fontSize=16;fontStyle=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-6">
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-43" value="SIGN IN" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=5;strokeColor=none;fontColor=#ffffff;fillColor=#66bbff;fontSize=16;fontStyle=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-36">
           <mxGeometry y="1" width="80" height="30" relative="1" as="geometry">
-            <mxPoint x="10" y="-150" as="offset" />
+            <mxPoint x="20" y="-150" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-14" value="Forgot Password?" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#9999ff;align=left;spacingLeft=0;fontStyle=4;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-6">
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-44" value="Forgot Password?" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#9999ff;align=left;spacingLeft=0;fontStyle=4;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-36">
           <mxGeometry y="1" width="150" height="20" relative="1" as="geometry">
             <mxPoint x="10" y="-110" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-15" value="" style="shape=line;strokeColor=#ddeeff;strokeWidth=2;html=1;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-6">
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-45" value="" style="shape=line;strokeColor=#ddeeff;strokeWidth=2;html=1;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-36">
           <mxGeometry y="1" width="180" height="10" relative="1" as="geometry">
             <mxPoint x="10" y="-90" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-16" value="New User" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;spacingLeft=0;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-6">
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-46" value="New User" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;spacingLeft=0;resizeWidth=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-36">
           <mxGeometry y="1" width="150" height="20" relative="1" as="geometry">
             <mxPoint x="10" y="-70" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-17" value="SIGN UP" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=5;strokeColor=none;fontColor=#ffffff;fillColor=#66bbff;fontSize=16;fontStyle=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-6">
+        <mxCell id="JEwpR79MPoA-WKV8Z6C1-47" value="SIGN UP" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=5;strokeColor=none;fontColor=#ffffff;fillColor=#66bbff;fontSize=16;fontStyle=1;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-36">
           <mxGeometry y="1" width="80" height="30" relative="1" as="geometry">
-            <mxPoint x="10" y="-40" as="offset" />
+            <mxPoint x="20" y="-50" as="offset" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="JEwpR79MPoA-WKV8Z6C1-25" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=rect;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="JEwpR79MPoA-WKV8Z6C1-2">
-          <mxGeometry x="200" y="110" width="630" height="310" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
