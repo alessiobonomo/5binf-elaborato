@@ -36,6 +36,99 @@ Il candidato analizzi la realtà di riferimento e, fatte le opportune ipotesi ag
 ![STRUTTURA ELABORATO ](https://raw.githubusercontent.com/alessiobonomo/5binf-elaborato/main/STRUTTURA%20ELABORATO.PNG)
 
 ## TABELLE DB
+CREATE TABLE Clienti  (
+codfiscale VARCHAR(16) NOT NULL PRIMARY KEY,
+nome VARCHAR(10) NOT NULL,
+cognome VARCHAR(10) NOT NULL,
+data_nascita  INT(10) NOT NULL,
+indirizzo  VARCHAR(45) NOT NULL,
+genere VARCHAR(45) NOT NULL,
+allergie  VARCHAR(20) NOT NULL);
+
+CREATE TABLE appuntamenti (
+id_appuntamento INT(30) NOT NULL PRIMARY KEY,
+ora TIME NOT NULL,
+data DATE NOT NULL,
+CodFiscale VARCHAR(16) NOT NULL);
+
+CREATE TABLE operazioni_cassa (
+id_operazione INT NOT NULL PRIMARY KEY,
+valore_ammontare FLOAT NOT NULL,
+descrizione VARCHAR(40) NOT NULL,
+data  DATE NOT NULL,
+ora TIME NOT NULL,
+id_promozione INT NOT NULL,
+CodFiscale VARCHAR(16) NOT NULL,
+id_Prodotto INT);
+
+CREATE TABLE fidelity_card (
+id_Carta INT NOT NULL PRIMARY KEY,
+punti INT NOT NULL,
+CodFiscale VARCHAR(16) NOT NULL);
+
+CREATE TABLE carta_regalo (
+id_CartaR INT NOT NULL PRIMARY KEY,
+valore  FLOAT NOT NULL,
+id_Operazione INT NOT NULL);
+
+CREATE TABLE Cronologia_eventi  (
+id_Evento INT NOT NULL PRIMARY KEY,
+data DATE NOT NULL,
+ora TIME NOT NULL,
+luogo VARCHAR(20) NOT NULL,
+CodFiscale VARCHAR(16) NOT NULL);
+
+CREATE TABLE stat_Economiche (
+id_stat INT NOT NULL PRIMARY KEY,
+preferenze VARCHAR(30) NOT NULL,
+necessità  VARCHAR(30) NOT NULL,
+id_appuntamento INT NOT NULL);
+
+CREATE TABLE Gestione_Prodotto (
+id_prodotto INT NOT NULL PRIMARY KEY,
+tipo VARCHAR(20) NOT NULL,
+quantità  INT NOT NULL,
+descrizione  VARCHAR(45) NOT NULL,
+n_scaffale INT NOT NULL);
+
+CREATE TABLE campagne_promozionali (
+id_Promozione INT NOT NULL PRIMARY KEY,
+tipo VARCHAR(20) NOT NULL,
+sconto INT NOT NULL,
+costo  FLOAT NOT NULL,
+CodFiscale VARCHAR(16) NOT NULL,
+id_Prodotto INT NOT NULL);
+
+CREATE TABLE archivio_foto (
+id_Foto INT NOT NULL PRIMARY KEY,
+data DATE NOT NULL,
+ora TIME NOT NULL,
+CodFiscale VARCHAR(16) NOT NULL);
+
+CREATE TABLE Scheda_tecnica (
+id_scheda  INT NOT NULL PRIMARY KEY,
+CodFiscale VARCHAR(16) NOT NULL);
+
+CREATE TABLE operazioni_scheda (
+id_operazioneS INT NOT NULL PRIMARY KEY,
+id_operazione INT NOT NULL,
+id_scheda INT NOT NULL);
+
+ALTER TABLE appuntamenti ADD  FOREIGN KEY (CodFiscale) REFERENCES Clienti (codfiscale);
+ALTER TABLE operazioni_cassa ADD FOREIGN KEY (id_promozione) REFERENCES campagne_promozionali (id_Promozione);
+ALTER TABLE operazioni_cassa ADD  FOREIGN KEY (CodFiscale) REFERENCES Clienti (codfiscale);
+ALTER TABLE operazioni_cassa ADD FOREIGN KEY (id_Prodotto) REFERENCES Gestione_Prodotto(id_prodotto);
+ALTER TABLE fidelity_card ADD  FOREIGN KEY (CodFiscale) REFERENCES Clienti (codfiscale);
+ALTER TABLE carta_regalo ADD FOREIGN KEY (id_Operazione) REFERENCES  operazioni_cassa(id_operazione);
+ALTER TABLE Cronologia_eventi  ADD FOREIGN KEY (CodFiscale) REFERENCES Clienti (codfiscale);
+ALTER TABLE stat_Economiche ADD FOREIGN KEY (id_appuntamento) REFERENCES appuntamenti(id_appuntamento) ;
+ALTER TABLE campagne_promozionali ADD FOREIGN KEY (CodFiscale) REFERENCES Clienti(codfiscale);
+ALTER TABLE campagne_promozionali ADD FOREIGN KEY (id_Prodotto) REFERENCES Gestione_Prodotto(id_prodotto);
+ALTER TABLE archivio_foto ADD FOREIGN KEY (CodFiscale) REFERENCES Clienti (codfiscale);
+ALTER TABLE Scheda_tecnica ADD FOREIGN KEY (CodFiscale) REFERENCES Clienti (codfiscale);
+ALTER TABLE operazioni_scheda ADD  FOREIGN KEY (id_operazione) REFERENCES operazioni_cassa(id_operazione);
+ALTER TABLE operazioni_scheda ADD FOREIGN KEY (id_scheda) REFERENCES Scheda_tecnica(id_scheda) ;
+
 
 
 
