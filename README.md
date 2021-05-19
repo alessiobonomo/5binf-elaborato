@@ -144,6 +144,10 @@ INSERT INTO Cronologia_eventi(id_Evento,data,ora,luogo,CodFiscale)VALUES(1,'16-0
 
 INSERT INTO stat_Economiche (id_stat,preferenze,necessità,id_appuntamento)VALUES(1,'capelli corti','nulla',1); 
 
+INSERT INTO Gestione_Prodotto (id_prodotto,tipo,quantità,descrizione,n_scaffale)VALUES(1,'barba',5,'schiuma da barba',01);
+
+INSERT INTO campagne_promozionali (id_Promozione,tipo,sconto,costo,CodFiscale,id_Prodotto)VALUES(1,'sconto su taglio',15%,10,1);
+
 ## QUERY
 "I trattamenti effettuati nell’ultimo mese dalla cliente Angelina Jolie"
 SELECT C.codFiscale,C.Nome,C.cognome,O.descrizione
