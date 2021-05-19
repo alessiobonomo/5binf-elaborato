@@ -129,15 +129,20 @@ ALTER TABLE Scheda_tecnica ADD FOREIGN KEY (CodFiscale) REFERENCES Clienti (codf
 ALTER TABLE operazioni_scheda ADD  FOREIGN KEY (id_operazione) REFERENCES operazioni_cassa(id_operazione);
 ALTER TABLE operazioni_scheda ADD FOREIGN KEY (id_scheda) REFERENCES Scheda_tecnica(id_scheda) ;
 
-
-
+## popolamento DB
+INSERT INTO Clienti(codfiscale,nome,cognome,data_nascita,indirizzo,genere,allergie)VALUES('BNMLSN00B08C773Q','Alessandro','Bonamano','2000-02-08','Via dei Rocchi''maschio','no');
+INSERT INTO appuntamenti(id_appuntamento,ora,data,codfiscale) VALUES(1,'16-00','2021-05-19','BNMLSN00B08C773Q');
+INSERT INTO operazioni_cassa(id_operazione,valore_ammontare,descrizione,data,ora,id_promozione,CodFiscale,id_Prodotto)VALUES(1,10,'taglio','2021-05-19','16-00',1,1,'BNMLSN00B08C773Q');
+INSERT INTO fidelity_card (id_Carta,punti,CodFiscale)VALUES(1,10,'BNMLSN00B08C773Q');
+INSERT INTO carta_regalo(id_CartaR,valore ,id_Operazione)VALUES(1,10,1);
+INSERT INTO Cronologia_eventi(id_Evento,data,ora,luogo,CodFiscale)VALUES(1,'16-00','2021-05-19','ROMA','BNMLSN00B08C773Q');
+INSERT INTO stat_Economiche (id_stat,preferenze,necessità,id_appuntamento)VALUES(1,'capelli corti','nulla',1); 
 
 ## QUERY
 "I trattamenti effettuati nell’ultimo mese dalla cliente Angelina Jolie"
 SELECT C.codFiscale,C.Nome,C.cognome,O.descrizione
 FROM Clienti AS C,operazione_cassa AS O,Scheda_tecnica AS S,Operazioni_Scheda AS OS
 WHERE C.codFiscale=S.codFiscale and S.id_Scheda=OS.id_Scheda and OS.id_operazioneS=O.id_operazione
-
 
 
 
