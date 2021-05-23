@@ -161,4 +161,15 @@ SELECT
 FROM
 WHERE
 
+## 3 PUNTO ELABORATO 
+* una descrizione, anche utilizzando uno schema grafico, con le funzionalità tecnologiche che dovranno possedere i dispositivi terminali utente e quelli aziendali dislocati *   nei punti strategici dei locali
+Dispositivi Utenti:
+-ACCESS POINT permette l accesso ad internet se collegato ad uno switch;
+-TABLET dove i clienti potranno vedere in internet, letture di giornali, cataloghi di prodotti;
+-TV dove si proietteranno video su accunciature e prodotti;
+Dispositivi dipendenti:
+-ACCESS POINT permette l accesso ad internet se collegato ad uno switch;
+-ablet  per le proposte di acconciature da proiettare nel tablet del cliente oppure da utilizzare come specchio,registrare prenotazioni in alternativa al telefono;
+telefoni cordless per rispondere ad eventuali prenotazioni telefoniche;
+PC-CASSA:FATTURAZIONE PERIODICA;
 
