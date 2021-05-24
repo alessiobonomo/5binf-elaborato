@@ -138,7 +138,7 @@ INSERT INTO appuntamenti(id_appuntamento,ora,data,codfiscale) VALUES(1,'16:00:00
 
 INSERT INTO fidelity_card (id_Carta,punti,CodFiscale)VALUES(1,10,'BNMLSN00B08C773Q');
 
--INSERT INTO carta_regalo(id_CartaR,valore ,id_Operazione)VALUES(1,10,1); //errore
+INSERT INTO `carta_regalo` (`id_CartaR`, `valore`, `id_Operazione`) VALUES (1, 5, 1);
 
 INSERT INTO Cronologia_eventi(id_Evento,data,ora,luogo,CodFiscale)VALUES(1,'2021-05-19','16:00:00','ROMA','BNMLSN00B08C773Q');
 
@@ -146,11 +146,11 @@ INSERT INTO stat_Economiche (id_stat,preferenze,necessità,id_appuntamento)VALUE
 
 INSERT INTO Gestione_Prodotto (id_prodotto,tipo,quantità,descrizione,n_scaffale)VALUES(1,'barba',5,'schiuma da barba',01);
 
--INSERT INTO campagne_promozionali (id_Promozione,tipo,sconto,costo,CodFiscale,id_Prodotto)VALUES(1,'sconto su taglio',15%,10,1); //errore
+INSERT INTO `campagne_promozionali` (`id_Promozione`, `tipo`, `sconto`, `costo`, `CodFiscale`, `id_Prodotto`) VALUES ('1', 'sconto su taglio', '10', '20', 'BNMLSN00B08C773Q', '1');
 
-INSERT INTO operazioni_cassa(id_operazione,valore_ammontare,descrizione,data,ora,id_promozione,CodFiscale,id_Prodotto) VALUES (1,10,'tagli','2021-05-19','16:00:00',1,'BNMLSN00B08C773Q',1); 
+INSERT INTO `operazioni_cassa` (`id_operazione`, `valore_ammontare`, `descrizione`, `data`, `ora`, `id_promozione`, `CodFiscale`, `id_Prodotto`) VALUES (1, 10, sconto su taglio, '2021-05-19', '16:00:00', 1, 'BNMLSN00B08C773Q', 1)
 
-INSERT INTO operazioni_scheda( id_operazioneS ,id_operazione, id_scheda ) VALUES  (1,1,1) //errore 
+INSERT INTO `operazioni_scheda` (`id_operazioneS`, `id_operazione`, `id_scheda`) VALUES (1,1,1);
 
 INSERT INTO archivio_foto (id_Foto,data,ora,CodFiscale) VALUES (1,'2021-05-19','16:00:00','BNMLSN00B08C773Q');
 
