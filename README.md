@@ -179,5 +179,6 @@ Dispositivi dipendenti:
 -Tablet  per le proposte di acconciature da proiettare nel tablet del cliente oppure da utilizzare come specchio,registrare prenotazioni in alternativa al telefono;
 
 -telefoni cordless :per rispondere ad eventuali prenotazioni telefoniche;
-PC-CASSA:FATTURAZIONE PERIODICA;
+
+-PC-CASSA:FATTURAZIONE PERIODICA;
 
