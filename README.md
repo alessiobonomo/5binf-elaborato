@@ -176,7 +176,7 @@ Dispositivi dipendenti:
 
 -ACCESS POINT permette l accesso ad internet se collegato ad uno switch;
 
--ablet  per le proposte di acconciature da proiettare nel tablet del cliente oppure da utilizzare come specchio,registrare prenotazioni in alternativa al telefono;
+-Tablet  per le proposte di acconciature da proiettare nel tablet del cliente oppure da utilizzare come specchio,registrare prenotazioni in alternativa al telefono;
 
 -telefoni cordless :per rispondere ad eventuali prenotazioni telefoniche;
 PC-CASSA:FATTURAZIONE PERIODICA;
