@@ -43,7 +43,9 @@ cognome VARCHAR(10) NOT NULL,
 data_nascita  INT(10) NOT NULL,
 indirizzo  VARCHAR(45) NOT NULL,
 genere VARCHAR(45) NOT NULL,
-allergie  VARCHAR(20) NOT NULL);
+allergie  VARCHAR(20) NOT NULL
+username varchar(15);
+
 
 CREATE TABLE appuntamenti (
 id_appuntamento INT(30) NOT NULL PRIMARY KEY,
@@ -114,6 +116,12 @@ id_operazioneS INT NOT NULL PRIMARY KEY,
 id_operazione INT NOT NULL,
 id_scheda INT NOT NULL);
 
+CREATE TABLE Utente (
+username varchar(15) PRIMARY KEY,
+password varchar(100));
+
+
+ALTER TABLE Clienti ADD  FOREIGN KEY (username) REFERENCES Utente(username);
 ALTER TABLE appuntamenti ADD  FOREIGN KEY (CodFiscale) REFERENCES Clienti (codfiscale);
 ALTER TABLE operazioni_cassa ADD FOREIGN KEY (id_promozione) REFERENCES campagne_promozionali (id_Promozione);
 ALTER TABLE operazioni_cassa ADD  FOREIGN KEY (CodFiscale) REFERENCES Clienti (codfiscale);
