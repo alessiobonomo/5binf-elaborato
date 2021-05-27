@@ -179,7 +179,10 @@ Dispositivi dipendenti:
 
 
 ## Executive summary
-in this project we propose the case of a barber who is located in an apartment without existing networks.
-So it will be necessary to create an architecture to allow both employees and customers to be able to choose the hairstyle they want.
-In this historical period, a number of people cannot enter a room, in fact, to avoid queues, reservations will be made on the barber's site.This site also grants the login and registration function, to allow users to have their own account with your data before making the reservation.
-There will also be a cash desk with internet connection for automatic billing, a wireless POS, and a VOIP network to answer telephone calls to take reservations in case of site malfunction.
+A barber located in an apartment without pre-existing networks, wants to create a new network infrastructure that provides certain services, which also represent the objectives:
+- Screens where you can project music videos or demonstrations of products or hairstyles;
+-Tablet for customers to offer internet browsing, newspaper reading, product catalogs consultation;
+- tablet for staff to select hairstyles proposals to be projected on the client's tablet or to be used as a virtual mirror;
+- VOIP network for cordless phones to answer any telephone reservations;
+-Site for registrations;
+
