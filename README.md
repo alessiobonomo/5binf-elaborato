@@ -180,9 +180,16 @@ Dispositivi dipendenti:
 
 ## Executive summary
 A barber located in an apartment without pre-existing networks, wants to create a new network infrastructure that provides certain services, which also represent the objectives:
-- Screens where you can project music videos or demonstrations of products or hairstyles;
--Tablet for customers to offer internet browsing, newspaper reading, product catalogs consultation;
-- tablet for staff to select hairstyles proposals to be projected on the client's tablet or to be used as a virtual mirror;
+
+Screens for projecting music videos or product or hairstyling demonstrations;
+
+-Tablet for customers to offer internet browsing, reading newspapers, consulting product catalogs;
+
+-tablet for staff to select hairstyles proposals to be projected on the client's tablet or to be used as a virtual mirror;
+
 - VOIP network for cordless phones to answer any telephone reservations;
--Site for registrations;
+ 
+- Registration site;
+
+Other solutions have already been proposed in the market to answer this problem: other users have developed sites for online booking, but my solution is better than the others because in the shop we offer the possibility to consult products, newspaper readings, mirrors and more a service innovative simulation of the hairstyle superimposed on the real-time image of the face so the client will be able to see if the hairstyle is suitable for him or not, and this is a particularly significant point because if the customer sees that there is something that other barbers have not, will spread the word and bring other customers.
 
