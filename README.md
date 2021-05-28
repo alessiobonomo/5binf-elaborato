@@ -142,8 +142,11 @@ ALTER TABLE operazioni_scheda ADD FOREIGN KEY (id_scheda) REFERENCES Scheda_tecn
 
 ## QUERY
 "I trattamenti effettuati nell’ultimo mese dalla cliente Angelina Jolie"
+
 SELECT C.codFiscale,C.Nome,C.cognome,O.descrizione,A.data
+
 FROM Clienti AS C,operazioni_cassa AS O,Scheda_tecnica AS S,operazioni_scheda AS OS,appuntamenti AS A 
+
 WHERE C.codFiscale=S.codFiscale and S.id_Scheda=OS.id_Scheda and OS.id_operazioneS=O.id_operazione and A.data=2020-04-01
 
 
