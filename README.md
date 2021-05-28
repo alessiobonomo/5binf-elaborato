@@ -149,8 +149,11 @@ WHERE C.codFiscale=S.codFiscale and S.id_Scheda=OS.id_Scheda and OS.id_operazion
 
 
 "Tutti i trattamenti più gettonati raggruppati per tipo"
-SELECT SE.tipo,SE.preferenze 
-FROM stat_Economiche SE 
+
+SELECT SE.tipo,SE.preferenze
+
+FROM stat_Economiche SE
+
 GROUP BY tipo,preferenze
 
 
