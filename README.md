@@ -142,16 +142,17 @@ ALTER TABLE operazioni_scheda ADD FOREIGN KEY (id_scheda) REFERENCES Scheda_tecn
 
 ## QUERY
 "I trattamenti effettuati nell’ultimo mese dalla cliente Angelina Jolie"
-SELECT C.codFiscale,C.Nome,C.cognome,O.descrizione
-FROM Clienti AS C,operazione_cassa AS O,Scheda_tecnica AS S,Operazioni_Scheda AS OS
-WHERE C.codFiscale=S.codFiscale and S.id_Scheda=OS.id_Scheda and OS.id_operazioneS=O.id_operazione
+SELECT C.codFiscale,C.Nome,C.cognome,O.descrizione,A.data
+FROM Clienti AS C,operazioni_cassa AS O,Scheda_tecnica AS S,operazioni_scheda AS OS,appuntamenti AS A 
+WHERE C.codFiscale=S.codFiscale and S.id_Scheda=OS.id_Scheda and OS.id_operazioneS=O.id_operazione and A.data=2020-04-01
 
 
 
 "Tutti i trattamenti più gettonati raggruppati per tipo"
-SELECT
-FROM
-WHERE
+SELECT SE.tipo,SE.preferenze 
+FROM stat_Economiche SE 
+GROUP BY tipo,preferenze
+
 
 ## 3 PUNTO ELABORATO 
 * una descrizione, anche utilizzando uno schema grafico, con le funzionalità tecnologiche che dovranno possedere i dispositivi terminali utente e quelli aziendali dislocati *   nei punti strategici dei locali
